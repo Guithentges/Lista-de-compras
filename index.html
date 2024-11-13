@@ -25,10 +25,27 @@
             <button type="submit">Adicionar item</button>
         </div>
         <div class="list">
-            <ul>
-                <li>Pão de forma</li>
-            </ul>
-            <div class="list-footer">O item foi removido da lista</div>
+            <div class="list-item">
+                <div class="item">
+                    <input type="checkbox" name="item" class="checkbox">
+                    <label for="item">Pão de forma</label>
+                </div>
+                <button class="exclude"></button>
+            </div>
+            <div class="list-item">
+                <div class="item">
+                    <input type="checkbox" name="item" class="checkbox">
+                    <label for="item">Queijo</label>
+                </div>
+                <button class="exclude"></button>
+            </div>
+            <div class="list-footer ">
+                <div class="item">
+                    <img src="assets/warning-circle.svg" alt="">
+                    <span>O item foi removido da lista</span>
+                </div>
+                <button class="exclude-2"></button>
+            </div>
         </div>
     </form>
 
