@@ -19,27 +19,27 @@
     <div class="compras">
         <h1>Compras da semana</h1>
     </div>
-    <form action="" method="get">
+    <form>
         <div class="add-item">
             <input type="text" placeholder="Adicione um novo item" name="input" id="input">
-            <button type="submit">Adicionar item</button>
+            <button id="submit" type="submit">Adicionar item</button>
         </div>
         <div class="list">
             <div class="list-item">
                 <div class="item">
                     <input type="checkbox" name="item" class="checkbox">
-                    <label for="item">Pão de forma</label>
+                    <label>Pão de forma</label>
                 </div>
                 <button class="exclude"></button>
             </div>
             <div class="list-item">
                 <div class="item">
                     <input type="checkbox" name="item" class="checkbox">
-                    <label for="item">Queijo</label>
+                    <label>Queijo</label>
                 </div>
                 <button class="exclude"></button>
             </div>
-            <div class="list-footer ">
+            <div id="list-footer" class="list-footer">
                 <div class="item">
                     <img src="assets/warning-circle.svg" alt="">
                     <span>O item foi removido da lista</span>
