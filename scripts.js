@@ -3,9 +3,11 @@ const excludeFooter = document.querySelector(".exclude-2")
 const listFooter = document.getElementById("list-footer")
 const form = document.querySelector("form")
 const list = document.querySelector(".list")
-let hide = document.getElementsByClassName("exclude")
+let exclude = document.querySelector(".exclude")
 const submit = document.getElementById("submit")
 
+
+listFooter.classList.add("no-appear")
 input.addEventListener("input", () => {
 })
 excludeFooter.addEventListener("click", (event) => {
@@ -15,7 +17,7 @@ excludeFooter.addEventListener("click", (event) => {
 
 submit.addEventListener("click", (event) => {
     event.preventDefault()
-
+    
     let listItem = document.createElement("div")
     listItem.classList.add("list-item")
     list.prepend(listItem)
@@ -37,10 +39,11 @@ submit.addEventListener("click", (event) => {
     let exclude = document.createElement("button")
     exclude.classList.add("exclude")
     listItem.append(exclude)
+    listFooter.classList.add("no-appear")
+    exclude.addEventListener("click", () => {
+        listItem.remove();
+        listFooter.classList.remove("no-appear")
+    });
 
     input.value = ""
-})
-
-hide.addEventListener("click", (event) => {
-    event.preventDefault()
 })
